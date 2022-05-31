@@ -1,0 +1,80 @@
+#header {
+  background-color: crimson;
+  position: relative;
+}
+
+#header .logo {
+  font-size: 2.5rem;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#header .big-menu ul li a {
+  text-decoration: none;
+  padding: 20px 25px;
+  display: block;
+  color: #fff;
+  font-size: 20px;
+}
+
+#header .big-menu ul li.home:hover .big-dropped {
+  opacity: 1;
+  visibility: visible;
+}
+
+#header .big-menu ul li.home .big-dropped {
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  border: 2px solid green;
+  background-color: blue;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#header .big-menu ul li.portfolio:hover .big-port {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+#header .big-menu ul li.portfolio .big-port {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  border: 2px solid black;
+  width: 100%;
+  background-color: green;
+}
+
+#header .big-menu ul li.portfolio .big-port ul {
+  text-align: center;
+}
+
+#header .big-menu ul li.pages {
+  position: relative;
+}
+
+#header .big-menu ul li.pages .boxes {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: aqua;
+  padding: 25px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#header .big-menu ul li.pages .boxes ul li a {
+  padding: 15px;
+}
+/*# sourceMappingURL=style.css.map */
